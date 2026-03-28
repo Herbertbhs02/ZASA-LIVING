@@ -10,7 +10,7 @@ body {
   background-image: url("/images/Household.png"); /* update path */
   background-size: cover;        /* fills entire screen */
   background-position: center;   /* keeps it centered */
-  background-repeat: no-repeat;  /* prevents tiling */
+  /*background-repeat: no-repeat;   prevents tiling */
   background-attachment: fixed;  /* optional: parallax effect */
   width: 100vw;
 }
