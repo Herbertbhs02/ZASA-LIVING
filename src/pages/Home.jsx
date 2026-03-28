@@ -16,43 +16,47 @@ const Home = () => {
 
       <h2 className="text-2xl text-center font-bold mt-10 mb-6">Services Offered</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-         {/*LIFESTYLE SUPPORT--card */}
-        <Link to="/services" className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
-              <div className="p-4">
-              <h3 className="font-bold text-lg mb-2 text-start">LIFESTYLE SUPPORT</h3>
-                  <ul className="list-disc pl-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6"> 
+           {/* Lifestyle support card */}
+         <div>
+            <Link to="/services" className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition ">
+            <h3 className="font-bold text-lg mb-2 text-start ">LIFESTYLE SUPPORT</h3>
+            </Link>
+              <div className="p-0">
+                  <ul className="list-disc pl-1">
                     <li>consectetur adipiscing elit.</li>
                     <li>consectetur adipiscing elit.</li>
                     <li>consectetur adipiscing elit.</li>
                   </ul>
               </div>
-          </Link>
-
-         {/*HOUSEHOLD--card */}
-        <Link to="/services" className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
-              <div className="p-4">
-              <h3 className="font-bold text-lg mb-2 text-start">HOUSEHOLD</h3>
-                  <ul className="list-disc pl-5">
-                   <li>consectetur adipiscing elit.</li>
+          </div>
+          {/*household--card */}
+        <div>
+          <Link to="/services" className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+            <h3 className="font-bold text-lg mb-2 text-start">HOUSEHOLD</h3>
+          </Link>   
+              <div className="p-1">
+                  <ul className="list-disc pl-1">
+                    <li>consectetur adipiscing elit.</li>
                     <li>consectetur adipiscing elit.</li>
                     <li>consectetur adipiscing elit.</li>
                   </ul>
               </div>
-          </Link>
+            
+        </div>
        {/*PROPERTY--card */}
-        <Link to="/services" className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
-              <div className="p-4">
+          <div>
+            <Link to="/services" className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
               <h3 className="font-bold text-lg mb-2 text-start">PROPERTY</h3>
-                  <ul className="list-disc pl-5">
-                    <li>consectetur adipiscing elit.</li>
-                    <li>consectetur adipiscing elit.</li>
-                    <li>consectetur adipiscing elit.</li>
-                  </ul>
-              </div>
-          </Link>
-
+            </Link>
+                  <div className="p-1">
+                      <ul className="list-disc pl-1">
+                        <li>consectetur adipiscing elit.</li>
+                        <li>consectetur adipiscing elit.</li>
+                        <li>consectetur adipiscing elit.</li>
+                      </ul>
+                  </div>
+          </div>
       </div>
     </div>
   );
