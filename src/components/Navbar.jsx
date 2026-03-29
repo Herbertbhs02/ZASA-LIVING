@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center">
         <div className="mb-0 ">
           {/* <div className="w-8 h-8 bg-blue-500 rounded-full" /> */}
-          <img src='images/ZASA-LIVING-logo2.png' alt='Log' className=" h-[5rem] object-contain" />
+          <img src='images/ZASA-LIVING-logo2.png' alt='Log' className=" h-[5rem] object-contain rounded-2xl" />
         </div>
        <div className=" items-center text-x1 font-extrabold">ZASA-LIVING</div>
         <div className="hidden md:flex gap-6">
