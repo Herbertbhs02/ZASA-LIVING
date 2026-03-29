@@ -6,13 +6,14 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <Router>
+       <ScrollToTop/>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-
         <div className="flex-grow">
           <Routes>
             <Route path="/" exact element={<Home />} />
