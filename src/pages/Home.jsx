@@ -10,10 +10,9 @@ const Home = () => {
       <div className=" text-black  rounded-lg"  >
         <h1 className="text-3xl font-bold mb-4 text-center ">Introduction</h1>
         <p className=" mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-           dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-           dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-           dolore magna aliqua.
+          ZASA Living is on a mission to save you time and reduce stress, so you spend your time doing things you enjoy with people you love. Our services focus on the personal, the home and business. Whether you are balancing a busy home and work, juggling multiples-yours and your parent’s, or with the passing of time you are no longer able to do those day to day tasks, we are here to make life easier.  Services include lifestyle support, household management, administration and property care. 
+Whilst we offer a number of service packages, we understand everyone one will have their own unique needs and set of circumstances and therefore can tailor services to suit. 
+
         </p>
       </div>
 
