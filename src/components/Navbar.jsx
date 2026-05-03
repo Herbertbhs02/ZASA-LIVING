@@ -7,21 +7,21 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-500 shadow-md py-2 px-2 rounded ">
+    <nav className="bg-[#0b1c31] text-white shadow-md py-2 px-2 rounded ">
       <div className="flex justify-between items-center">
         <div className="mb-0 ">
           {/* <div className="w-8 h-8 bg-blue-500 rounded-full" /> */}
           <img src='images/ZASA-LIVING-logo2.png' alt='Log' className=" h-[5rem] object-contain rounded-2xl" />
         </div>
        <div className=" items-center text-x1 font-extrabold">ZASA-LIVING</div>
-        <div className="hidden md:flex gap-6">
+        <div className="hidden md:flex gap-6 p-4">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/services">Services</Link>
           <Link to="/contact">Contact</Link>
         </div>
 
-        <button onClick={() => setOpen(!open)} className="md:hidden">
+        <button onClick={() => setOpen(!open)} className="md:hidden p-4">
           {open ? <X /> : <Menu />}
         </button>
       </div>
