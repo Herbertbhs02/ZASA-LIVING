@@ -4,7 +4,7 @@ import { faFacebook, faTwitter, faYoutube, faLinkedin } from '@fortawesome/free-
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-600 text-white p-4 mt-10">
+    <footer className="bg-gray-950 text-white p-4 mt-0">
     
            
               <div className="flex justify-center py-1 px-1 gap-2">

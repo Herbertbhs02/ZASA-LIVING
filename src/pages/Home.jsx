@@ -27,7 +27,7 @@ const Home = () => {
          
         </div>
         <img
-          src="images/bg-photo.png"
+          src="images/Introduction-photo.png"
           alt="hero"
           className="rounded-2xl shadow"
         />
