@@ -30,26 +30,3 @@ export default function App() {
 
 
 
-
-
-// import React from "react";
-// import './index.css';
-// // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-//  import Navbar from './components/Navbar';
-// // import Footer from "./components/Footer";
-// // import Home from "./pages/Home";
-// // import About from "./pages/About";
-// // import Services from "./pages/Services";
-// // import Contact from "./pages/Contact";
-
-// export default function App() {
-//   return (
-//      <div>
-    
-//     <div className="p-6 bg-blue-600 text-white text-2x1 font-bold rounded-lg">
-//       tailwind + Vite works !
-//     </div>
-
-//      </div>
-//   );
-// }
