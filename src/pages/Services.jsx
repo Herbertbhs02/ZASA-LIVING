@@ -2,14 +2,18 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="">
-      <h3 className="text-2xl font-bold text-center">SERVICES</h3>
+    <div className="bg-slate-400">
+      <h3 className="text-2xl font-bold text-center">OUR SERVICES</h3>
 
-      <div className="relative p-6 text-white bg-[url('/images/PersonalLifestyleSupport.png')] bg-cover bg-center bg-no-repeat">
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
-        <div className="relative z-10">
-          <h2 className="font-bold">Lifestyle support</h2>
+      <div className="p-4 text-black">
+
+          <h2 className="font-bold p-1">Lifestyle support</h2>
+
+             <img
+                src="images/PersonalLifestyleSupport.png"
+                alt="lifestyle photo"
+                className="float-left mr-4 mb-2 h-[14rem] rounded-xl"
+              />
           <p>
             With busy lives some items can simply fall off the list as there is
             not enough time in the day to manage all the activities and events
@@ -23,7 +27,7 @@ const Services = () => {
           <p>
             Whether you are looking to organise a home party or party at a
             venue, just set your criteria and budget then leave the rest to
-            us.{" "}
+            us.
           </p>
           <li>Travel Booking</li>
           <p>
@@ -35,14 +39,18 @@ const Services = () => {
             Zasa living takes the hassle out of organising visa, passport
             renewals and membership cancellations.
           </p>
-        </div>
       </div>
 
-      <div className="relative p-6 mt-1 text-white bg-[url('/images/HouseholdManagement.png')] bg-cover bg-center bg-no-repeat">
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
-        <div className="relative z-10">
+
+
+      <div className="p-4 mt-1 text-black ">
           <h2 className="font-bold">Household Management</h2>
+            <img
+                src="images/HouseholdManagement.png"
+                alt="lifestyle photo"
+                className="float-left mr-4 mb-2 h-[14rem] rounded-xl"
+              />
+
           <p>
             Running your home becomes that much easier, we focus on ensuring
             household tasks get done when needed and in a manner in which you
@@ -66,10 +74,9 @@ const Services = () => {
           </p>
           <li>Trades and Service coordination</li>
           <p>
-            {" "}
             Ensuring that the plumber and cleaner are scheduled appropriately,
             or simply sourcing and or organising the delivery of such services
-            depending your needs and requirements.{" "}
+            depending your needs and requirements.
           </p>
           <li>Errands</li>
           <p>
@@ -77,14 +84,18 @@ const Services = () => {
             precious parcels. Working with house pets, we can arrange to take
             your pets to the vet and feed household pets whilst you are away.
           </p>
-        </div>
+        
       </div>
 
-      <div className="  relative p-6 mt-1 text-white bg-[url('/images/Property.png')] bg-cover bg-center bg-no-repeat">
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
-        <div className="relative z-10">
+      <div className=" px-4 mt-1 pb-14 text-black">
           <h2 className="font-bold">Property Care</h2>
+
+             <img
+                src="images/Property.png"
+                alt="lifestyle photo"
+                className="float-left mr-4 mb-0 h-[14rem] rounded-xl"
+              />
+          
           <p>
             ZASA Living is geared towards helping resolve the issues with your
             property in a hassle free manner. The type of works needed and
@@ -100,7 +111,7 @@ const Services = () => {
             ensure works get completed
           </li>
           <li>Support landlords property with checks</li>
-        </div>
+      
       </div>
     </div>
   );

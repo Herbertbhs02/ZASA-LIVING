@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -11,9 +10,13 @@ const Navbar = () => {
       <div className="flex justify-between items-center">
         <div className="mb-0 ">
           {/* <div className="w-8 h-8 bg-blue-500 rounded-full" /> */}
-          <img src='images/ZASA-LIVING-logo2.png' alt='Log' className=" h-[5rem] object-contain rounded-2xl" />
+          <img
+            src="images/ZASA-LIVING-logo2.png"
+            alt="Log"
+            className=" h-[5rem] object-contain rounded-2xl"
+          />
         </div>
-       <div className=" items-center text-x1 font-extrabold">ZASA-LIVING</div>
+        <div className=" items-center text-x1 font-extrabold">ZASA-LIVING</div>
         <div className="hidden md:flex gap-6 p-4">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
@@ -28,10 +31,18 @@ const Navbar = () => {
 
       {open && (
         <div className="flex flex-col mt-4 gap-2 md:hidden">
-          <Link to="/" onClick={() => setOpen(false)}>Home</Link>
-          <Link to="/about" onClick={() => setOpen(false)}>About</Link>
-          <Link to="/services" onClick={() => setOpen(false)}>Services</Link>
-          <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
+          <Link to="/" onClick={() => setOpen(false)}>
+            Home
+          </Link>
+          <Link to="/about" onClick={() => setOpen(false)}>
+            About
+          </Link>
+          <Link to="/services" onClick={() => setOpen(false)}>
+            Services
+          </Link>
+          <Link to="/contact" onClick={() => setOpen(false)}>
+            Contact
+          </Link>
         </div>
       )}
     </nav>
@@ -39,4 +50,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

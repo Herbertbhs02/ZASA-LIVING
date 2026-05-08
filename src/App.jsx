@@ -11,7 +11,7 @@ import ScrollToTop from "./components/ScrollToTop";
 export default function App() {
   return (
     <Router>
-       <ScrollToTop/>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <div className="flex-grow">
@@ -27,6 +27,3 @@ export default function App() {
     </Router>
   );
 }
-
-
-

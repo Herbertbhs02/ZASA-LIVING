@@ -6,12 +6,9 @@ const Home = () => {
   return (
     <div className="p-0 min-h-screen ">
       {/* Introduction */}
-      <section className="grid md:grid-cols-2 gap-8 items-center px-6 py-10  bg-[#0B1F3A] ">
+      <section className="grid md:grid-cols-2 gap-8 place-items-start px-6 py-6  bg-[#0B1F3A] ">
         <div>
-          <h1 className="text-4xl md:text-5xl text-white font-bold mb-6">
-            Introduction
-          </h1>
-          <p className="text-white mb-6">
+          <p className="text-white mt-0 ">
             ZASA Living is on a mission to save you time and reduce stress, so
             you spend your time doing things you enjoy with people you love. Our
             services focus on the personal, the home and business. Whether you
@@ -34,7 +31,7 @@ const Home = () => {
       </section>
 
       <div className="text-2xl text-center font-bold mt-10 mb-2 mt-2 ">
-        Services Offered
+        Our Services
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -44,7 +41,7 @@ const Home = () => {
             <h3 className="font-semibold text-lg mb-2 text-start text-black">
               Lifestyle Support
             </h3>
-            <div class="prose">
+            <div class="">
               <img
                 src="images/lifestyle.png"
                 alt="lifestyle photo"
