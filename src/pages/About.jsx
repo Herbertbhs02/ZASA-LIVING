@@ -8,7 +8,7 @@ const About = () => {
       <section className="bg-[#0B1F3A] text-white py-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            About ZASA Services
+            About ZASA Living
           </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             Supporting busy professionals, caregivers, and individuals who want
@@ -26,7 +26,7 @@ const About = () => {
               Personal Journey
             </h2>
             <p className="leading-relaxed text-gray-700">
-              ZASA Services was born from my personal journey as both a working
+              ZASA Living was born from my personal journey as both a working
               parent and a caregiver for aging parents. I understand firsthand
               the exhaustion of balancing a demanding career with home life and
               the importance of spending truly quality time with family.
@@ -105,7 +105,7 @@ const About = () => {
           <p className="text-gray-700 text-lg leading-relaxed text-center max-w-4xl mx-auto">
             Whether you are a busy professional, someone finding that age is
             limiting daily tasks, or simply someone who wants to reclaim time
-            for what matters most, ZASA Services is here to handle the
+            for what matters most, ZASA Living is here to handle the
             day-to-day responsibilities so you don’t have to.
           </p>
 
@@ -115,7 +115,7 @@ const About = () => {
                               to="/contact"
                               className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition"
                             >
-                                Contact ZASA Services
+                                Contact ZASA Living
                             </Link>
             
             </button>
