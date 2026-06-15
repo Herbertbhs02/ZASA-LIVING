@@ -7,7 +7,7 @@ const servicesData = [
     title: "Lifestyle Support",
     image: "images/PersonalLifestyleSupport.png",
     description:
-      "With busy lives, some important tasks can simply fall off the list. ZASA Living helps you reclaim your time by managing appointments, organising events, booking travel, and supporting your personal admin needs.",
+      "In a fast-paced world, essential tasks can often be overlooked. We act as your personal lifestyle advocates, managing the fine details of your schedule so you don't have to. We expertly handle your personal appointments, organise events, book travel and the admin.",
     items: [
       {
         heading: "Organise Events",
@@ -27,7 +27,7 @@ const servicesData = [
     title: "Household Management",
     image: "images/HouseholdManagement.png",
     description:
-      "Running your home becomes easier with structured support tailored to your lifestyle. We coordinate household services, organise tradespeople, and ensure everything runs smoothly.",
+      "Running your home becomes that much easier with structured supported tailored to your lifestyle.  We ensure your home operates at peak efficiency and is maintained exactly to your standards. By first understanding your specific needs and preferences, we execute household tasks with precision and care. ",
     items: [
       {
         heading: "House MOT",
@@ -47,7 +47,7 @@ const servicesData = [
     title: "Property Care",
     image: "images/Property.png",
     description:
-      "ZASA Living provides hassle-free property support services, whether you need project management for home improvements or regular property checks while away.",
+      "ZASA Living provides professional oversight for your primary residence, investment properties, or the homes of family members. We minimize the stress of property ownership through proactive management.",
     items: [
       {
         heading: "Project Management",

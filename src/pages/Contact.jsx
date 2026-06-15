@@ -1,33 +1,10 @@
-import React, { useState } from "react";
+
+import React from "react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    contactNumber: "",
-    email: "",
-    serviceRequired: "",
-    postcode: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Connect to Formspree, EmailJS, or your backend API here
-    console.log(formData);
-
-    alert("Thank you for your enquiry. We will get back to you shortly.");
-  };
-
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero */}
+      {/* Hero Section */}
       <section className="bg-[#0B1F3A] text-white py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -48,105 +25,158 @@ const Contact = () => {
             Send an Enquiry
           </h2>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form
+            action="https://formspree.io/f/xwvjywwo"
+            method="POST"
+            className="space-y-6"
+          >
             {/* Name */}
             <div>
-              <label className="block mb-2 font-medium">
+              <label
+                htmlFor="name"
+                className="block mb-2 font-medium text-gray-700"
+              >
                 Name *
               </label>
               <input
+                id="name"
                 type="text"
                 name="name"
                 required
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 placeholder="Enter your name"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
             </div>
 
             {/* Contact Number */}
             <div>
-              <label className="block mb-2 font-medium">
+              <label
+                htmlFor="contactNumber"
+                className="block mb-2 font-medium text-gray-700"
+              >
                 Contact Number *
               </label>
               <input
+                id="contactNumber"
                 type="tel"
                 name="contactNumber"
                 required
-                value={formData.contactNumber}
-                onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 placeholder="Enter your phone number"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
             </div>
 
             {/* Email */}
             <div>
-              <label className="block mb-2 font-medium">
+              <label
+                htmlFor="email"
+                className="block mb-2 font-medium text-gray-700"
+              >
                 Email Address *
               </label>
               <input
+                id="email"
                 type="email"
                 name="email"
                 required
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 placeholder="Enter your email address"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
             </div>
 
-            {/* Service Required */}
+            {/* Services Required */}
             <div>
-              <label className="block mb-2 font-medium">
-                Service Required *
+              <label className="block mb-3 font-medium text-gray-700">
+                Services Required
               </label>
-              <select
-                name="serviceRequired"
-                required
-                value={formData.serviceRequired}
-                onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              >
-                <option value="">Select a service</option>
-                <option value="Lifestyle Support">
-                  Lifestyle Support
-                </option>
-                <option value="Household Management">
-                  Household Management
-                </option>
-                <option value="Property Care">
-                  Property Care
-                </option>
-                <option value="Other">
-                  Other
-                </option>
-              </select>
+
+              <div className="space-y-3">
+                <label className="flex items-center gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    name="services[]"
+                    value="Lifestyle Support"
+                    className="h-4 w-4 text-indigo-600"
+                  />
+                  <span>Lifestyle Support</span>
+                </label>
+
+                <label className="flex items-center gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    name="services[]"
+                    value="Household Management"
+                    className="h-4 w-4 text-indigo-600"
+                  />
+                  <span>Household Management</span>
+                </label>
+
+                <label className="flex items-center gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    name="services[]"
+                    value="Property Care"
+                    className="h-4 w-4 text-indigo-600"
+                  />
+                  <span>Property Care</span>
+                </label>
+
+                <label className="flex items-center gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    name="services[]"
+                    value="Other"
+                    className="h-4 w-4 text-indigo-600"
+                  />
+                  <span>Other</span>
+                </label>
+              </div>
             </div>
 
-            {/* Postcode */}
+            {/* Additional Comments */}
             <div>
-              <label className="block mb-2 font-medium">
-                Postcode *
+              <label
+                htmlFor="comments"
+                className="block mb-2 font-medium text-gray-700"
+              >
+                Additional Comments
               </label>
+
+              <textarea
+                id="comments"
+                name="comments"
+                rows="3"
+                placeholder="Please provide a brief description of how we can help..."
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+            </div>
+
+    
+
+            {/* Hidden Subject Field */}
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Website Enquiry"
+            />
+
+           {/* Hidden Subject Field  for formspree to detect bots*/}
+             <div style={{ display: "none" }}>
               <input
                 type="text"
-                name="postcode"
-                required
-                value={formData.postcode}
-                onChange={handleChange}
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                placeholder="Enter your postcode"
+                name="_gotcha"
+                tabIndex="-1"
+                autoComplete="off"
               />
             </div>
 
-            {/* Submit */}
+
+            {/* Submit Button */}
             <button
               type="submit"
               className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-semibold transition duration-300"
             >
-              Submit Enquiry
+              Submit
             </button>
           </form>
 
