@@ -1,7 +1,39 @@
-
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+
+const [submitted, setSubmitted] = useState(false);
+const [loading, setLoading] = useState(false);
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  setLoading(true);
+
+  const formData = new FormData(e.target);
+
+  const response = await fetch(
+    "https://formspree.io/f/xwvjywwo",
+    {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    }
+  );
+
+  setLoading(false);
+
+  if (response.ok) {
+    setSubmitted(true);
+    e.target.reset();
+  } else {
+    alert("Something went wrong. Please try again.");
+  }
+};
+
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -25,9 +57,15 @@ const Contact = () => {
             Send an Enquiry
           </h2>
 
+          {/*message after submit */}
+        {submitted && (
+  <div className="mb-6 rounded-lg bg-green-100 border border-green-300 p-4 text-green-800">
+    Thank you for your enquiry. We will get back to you within 24 hours.
+  </div>
+)}
+
           <form
-            action="https://formspree.io/f/xwvjywwo"
-            method="POST"
+            onSubmit={handleSubmit}
             className="space-y-6"
           >
             {/* Name */}
@@ -174,9 +212,10 @@ const Contact = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-semibold transition duration-300"
+              disabled={loading}
+              className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-semibold transition duration-300 disabled:opacity-50"
             >
-              Submit
+              {loading ? "Sending..." : "Submit"}
             </button>
           </form>
 
