@@ -8,15 +8,12 @@ const Home = () => {
       {/* Introduction */}
       <section className="grid md:grid-cols-2 gap-8 place-items-start px-6 py-6  bg-[#0B1F3A] ">
         <div>
-          <p className="text-white mt-0 ">
-            ZASA Living is on a mission to save you time and reduce stress, so
-            you spend your time doing things you enjoy with people you love. Our
-            services focus on the personal, the home and business. Whether you
-            are balancing a busy home and work, juggling multiples-yours and
-            your parent’s, or with the passing of time you are no longer able to
-            do those day to day tasks, we are here to make life easier. Services
-            include lifestyle support, household management, administration and
-            property care.
+          <p className="text-white text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mt-0 ">
+            ZASA Living is dedicated to reclaiming your time, and reducing the complexities of modern life.
+            Reducing stress and supporting you to do the things you enjoy with people you love.  We provide high-level support for your personal,
+            home, and business needs, allowing you to focus on what truly matters. Whether you are balancing a demanding career with family life,
+            managing the affairs of aging parents, or seeking assistance with day to day tasks, our mission is to provide seamless, expert 
+            solutions tailored to your unique circumstances.Services offered include lifestyle support, household management, property care and bespoke services.
             <br />
             Whilst we offer a number of service packages, we understand everyone
             one will have their own unique needs and set of circumstances and

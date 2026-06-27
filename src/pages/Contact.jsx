@@ -40,10 +40,10 @@ const handleSubmit = async (e) => {
       <section className="bg-[#0B1F3A] text-white py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Contact Us
+            Reclaim Your Time- Contact Us
           </h1>
 
-          <p className="text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             We aim to get back to you within 24 hours of submitting your
             enquiry. Alternatively, give us a call.
           </p>

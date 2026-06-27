@@ -8,7 +8,7 @@ const About = () => {
       <section className="bg-[#0B1F3A] text-white py-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            About ZASA Living
+            Our Story
           </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             Supporting busy professionals, caregivers, and individuals who want
@@ -49,7 +49,7 @@ const About = () => {
 
             <p className="leading-relaxed text-gray-700 mb-6">
               Beyond personal experience, I am a skilled Project Manager with
-              over 20 years of professional expertise.
+              over 20 years of professional expertise defined by;
             </p>
 
             <div className="space-y-4">

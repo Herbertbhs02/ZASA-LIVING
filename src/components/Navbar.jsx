@@ -16,12 +16,12 @@ const Navbar = () => {
             className=" h-[5rem] object-contain rounded-2xl"
           />
         </div>
-        <div className=" items-center text-x1 font-extrabold">ZASA-LIVING</div>
+        <div className=" items-center text-x1 font-extrabold">ZASA LIVING</div>
         <div className="hidden md:flex gap-6 p-4">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/services">Services</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">Contact us</Link>
         </div>
 
         <button onClick={() => setOpen(!open)} className="md:hidden p-4">

@@ -10,16 +10,20 @@ const servicesData = [
       "In a fast-paced world, essential tasks can often be overlooked. We act as your personal lifestyle advocates, managing the fine details of your schedule so you don't have to. We expertly handle your personal appointments, organise events, book travel and the admin.",
     items: [
       {
-        heading: "Organise Events",
-        text: "Whether you're planning a home gathering or an event at a venue, we manage the details based on your criteria and budget.",
+        heading: "Diary Management",
+        text: " Coordination of all personal appointments, including medical, dental, membership/service cancellation and wellness engagements.",
+      },
+         {
+        heading: "Event Planning",
+        text: "Full-scale coordination for private functions, from initial concept and budgeting to venue sourcing and execution. Whether you prefer your event at home or at a venue.",
       },
       {
-        heading: "Travel Booking",
-        text: "We arrange rail and airline tickets, accommodation, and travel plans both within the UK and abroad.",
+        heading: "Travel & Concierge",
+        text: "Comprehensive booking services for rail, air, and accommodation at home or abroad.",
       },
       {
-        heading: "Admin Support",
-        text: "From visa applications and passport renewals to membership cancellations, we remove the hassle from your admin tasks.",
+        heading: "Bespoke Administration",
+        text: "Handling time-consuming tasks such as visa applications, passport renewals, and membership management.",
       },
     ],
   },
@@ -30,16 +34,16 @@ const servicesData = [
       "Running your home becomes that much easier with structured supported tailored to your lifestyle.  We ensure your home operates at peak efficiency and is maintained exactly to your standards. By first understanding your specific needs and preferences, we execute household tasks with precision and care. ",
     items: [
       {
-        heading: "House MOT",
-        text: "We assess your household needs and create schedules for services such as boiler servicing, maintenance, and cleaning.",
+        heading: "The ''House MOT''",
+        text: "A comprehensive property assessment to understand maintenance requirements and establish a customized monthly or annual service schedule (e.g., boiler servicing, gas& electrical certification, gutter cleaning).",
       },
       {
-        heading: "Trades & Service Coordination",
-        text: "We organise plumbers, cleaners, electricians, and other service providers to ensure your home stays well maintained.",
+        heading: "Trades and Service Coordination",
+        text: "Sourcing and overseeing vetted tradespeople—from plumbers, electricians to window cleaners—to ensure work is completed without disrupting your work or home life.",
       },
       {
-        heading: "Errands",
-        text: "From shopping and parcel collection to pet care and vet visits, we handle the day-to-day tasks that save you valuable time.",
+        heading: "Errand Services",
+        text: "Reliable support for daily necessities, including personal shopping, parcel management, and pet care logistics (including veterinary visits and feeding), we handle the day to day tasks that save you valuable time. ",
       },
     ],
   },
@@ -51,15 +55,15 @@ const servicesData = [
     items: [
       {
         heading: "Project Management",
-        text: "We oversee home improvement projects and repairs to ensure work is completed efficiently and to a high standard.",
+        text: " Expert oversight of home improvements, renovations, and essential repairs to ensure they are completed on time and to standard.",
       },
       {
-        heading: "Key Holding Service",
-        text: "We check on your property while you're away and coordinate contractors or maintenance work on your behalf.",
+        heading: "Professional Key Holding",
+        text: "We provide secure access for contractors and perform regular property checks while you are away, ensuring you never return to unexpected issues.",
       },
       {
         heading: "Landlord Support",
-        text: "Property inspections and support services designed to help landlords maintain their properties with ease.",
+        text: "Specialized assistance for property owners, including routine inspections and tenant-related logistics.",
       },
     ],
   },
