@@ -97,7 +97,7 @@ const Services = () => {
 
               {/* Content */}
               <div className="p-8 flex flex-col justify-center">
-                <h2 className="text-3xl font-bold text-indigo-600 mb-4">
+                <h2 className="text-3xl font-bold text-[#0B1F3A] mb-4">
                   {service.title}
                 </h2>
 
@@ -109,7 +109,7 @@ const Services = () => {
                   {service.items.map((item, idx) => (
                     <div
                       key={idx}
-                      className="border-l-4 border-indigo-500 pl-4"
+                      className="border-l-4 border-[#0B1F3A] pl-4"
                     >
                       <h3 className="font-semibold text-lg mb-1">
                         {item.heading}
@@ -129,8 +129,8 @@ const Services = () => {
 
       {/* Bottom CTA */}
       <section className="px-6 pb-16">
-        <div className="max-w-5xl mx-auto bg-indigo-50 rounded-2xl p-10 text-center shadow-sm">
-          <h2 className="text-3xl font-bold text-indigo-700 mb-4">
+        <div className="max-w-5xl mx-auto bg-orange-200 rounded-2xl p-10 text-center shadow-sm">
+          <h2 className="text-3xl font-bold text-[#0B1F3A] mb-4">
             Reclaim Your Time
           </h2>
 
@@ -140,7 +140,7 @@ const Services = () => {
             life simpler and less stressful.
           </p>
 
-          <button className="mt-8 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-semibold transition duration-300 shadow-md">
+          <button className="mt-8 bg-[#0B1F3A] hover:bg-indigo-700 text-white px-8 py-3 rounded-full font-semibold transition duration-300 shadow-md">
             Get Started
           </button>
         </div>

@@ -9,11 +9,16 @@ const Home = () => {
       <section className="grid md:grid-cols-2 gap-8 place-items-start px-6 py-6  bg-[#0B1F3A] ">
         <div>
           <p className="text-white text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mt-0 ">
-            ZASA Living is dedicated to reclaiming your time, and reducing the complexities of modern life.
-            Reducing stress and supporting you to do the things you enjoy with people you love.  We provide high-level support for your personal,
-            home, and business needs, allowing you to focus on what truly matters. Whether you are balancing a demanding career with family life,
-            managing the affairs of aging parents, or seeking assistance with day to day tasks, our mission is to provide seamless, expert 
-            solutions tailored to your unique circumstances.Services offered include lifestyle support, household management, property care and bespoke services.
+            ZASA Living is dedicated to reclaiming your time, and reducing the
+            complexities of modern life. Reducing stress and supporting you to
+            do the things you enjoy with people you love. We provide high-level
+            support for your personal, home, and business needs, allowing you to
+            focus on what truly matters. Whether you are balancing a demanding
+            career with family life, managing the affairs of aging parents, or
+            seeking assistance with day to day tasks, our mission is to provide
+            seamless and expert solutions tailored to your unique circumstances.
+            Services offered include lifestyle support, household management,
+            property care and bespoke services.
             <br />
             Whilst we offer a number of service packages, we understand everyone
             one will have their own unique needs and set of circumstances and
@@ -45,9 +50,11 @@ const Home = () => {
                 className="float-left mr-4 mb-2 h-[7rem] rounded-xl"
               />
               <p>
-                In a fast-paced world, essential tasks can often be overlooked. We act as your personal lifestyle advocates,
-                managing the fine details of your schedule so you don't have to. We expertly handle your personal appointments,
-                organise events, book travel and the admin.
+                In a fast-paced world, essential tasks can often be overlooked.
+                We act as your personal lifestyle advocates, managing the fine
+                details of your schedule so you don't have to. We expertly
+                handle your personal appointments, organise events, book travel
+                and the admin.
               </p>
             </div>
 
@@ -93,9 +100,11 @@ const Home = () => {
                 className="float-left mr-4 mb-2 h-[7rem] rounded-xl"
               />
               <p>
-               Running your home becomes that much easier with structured supported tailored to your lifestyle.
-              We ensure your home operates at peak efficiency and is maintained exactly to your standards. 
-              By first understanding your specific needs and preferences, we execute household tasks with precision and care. 
+                Running your home becomes that much easier with structured
+                supported tailored to your lifestyle. We ensure your home
+                operates at peak efficiency and is maintained exactly to your
+                standards. By first understanding your specific needs and
+                preferences, we execute household tasks with precision and care.
               </p>
             </div>
 
@@ -141,9 +150,10 @@ const Home = () => {
                 className="float-left mr-4 mb-2 h-[7rem] w-[12rem] rounded-xl"
               />
               <p className="mt-0">
-                ZASA Living provides professional oversight for your primary residence,
-                 investment properties, or the homes of family members. We minimize the 
-                 stress of property ownership through proactive management.
+                ZASA Living provides professional oversight for your primary
+                residence, investment properties, or the homes of family
+                members. We minimize the stress of property ownership through
+                proactive management.
               </p>
             </div>
 
@@ -176,7 +186,7 @@ const Home = () => {
           </div>
         </section>
 
-       {/*Bespoke--card */}
+        {/*Bespoke--card */}
         <section className=" px-4">
           <div>
             <h3 className="font-semibold text-lg mb-2 text-start  text-black ">
@@ -189,7 +199,8 @@ const Home = () => {
                 className="float-left mr-4 mb-2 h-[7rem] w-[12rem] rounded-xl"
               />
               <p className="mt-0">
-              While we offer structured service packages, we recognize that every client’s requirements are distinct.
+                While we offer structured service packages, we recognize that
+                every client’s requirements are distinct.
               </p>
             </div>
 
@@ -221,9 +232,6 @@ const Home = () => {
             </button>
           </div>
         </section>
-
-
-
       </div>
     </div>
   );

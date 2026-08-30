@@ -1,38 +1,33 @@
 import React, { useState } from "react";
 
 const Contact = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-const [submitted, setSubmitted] = useState(false);
-const [loading, setLoading] = useState(false);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
+    setLoading(true);
 
-  setLoading(true);
+    const formData = new FormData(e.target);
 
-  const formData = new FormData(e.target);
-
-  const response = await fetch(
-    "https://formspree.io/f/xwvjywwo",
-    {
+    const response = await fetch("https://formspree.io/f/xwvjywwo", {
       method: "POST",
       body: formData,
       headers: {
         Accept: "application/json",
       },
+    });
+
+    setLoading(false);
+
+    if (response.ok) {
+      setSubmitted(true);
+      e.target.reset();
+    } else {
+      alert("Something went wrong. Please try again.");
     }
-  );
-
-  setLoading(false);
-
-  if (response.ok) {
-    setSubmitted(true);
-    e.target.reset();
-  } else {
-    alert("Something went wrong. Please try again.");
-  }
-};
-
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -45,7 +40,7 @@ const handleSubmit = async (e) => {
 
           <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
             We aim to get back to you within 24 hours of submitting your
-            enquiry. Alternatively, give us a call.
+            enquiry. Alternatively, give us a call on 07841598371
           </p>
         </div>
       </section>
@@ -53,21 +48,19 @@ const handleSubmit = async (e) => {
       {/* Contact Form */}
       <section className="max-w-3xl mx-auto px-6 py-14">
         <div className="bg-white rounded-2xl shadow-md p-8 md:p-10">
-          <h2 className="text-2xl font-bold text-indigo-600 mb-8 text-center">
+          <h2 className="text-2xl font-bold text-[#0B1F3A] mb-8 text-center">
             Send an Enquiry
           </h2>
 
           {/*message after submit */}
-        {submitted && (
-  <div className="mb-6 rounded-lg bg-green-100 border border-green-300 p-4 text-green-800">
-    Thank you for your enquiry. We will get back to you within 24 hours.
-  </div>
-)}
+          {submitted && (
+            <div className="mb-6 rounded-lg bg-green-100 border border-green-300 p-4 text-green-800">
+              Thank you for your enquiry. We will get back to you within 24
+              hours.
+            </div>
+          )}
 
-          <form
-            onSubmit={handleSubmit}
-            className="space-y-6"
-          >
+          <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name */}
             <div>
               <label
@@ -166,7 +159,7 @@ const handleSubmit = async (e) => {
                     value="Other"
                     className="h-4 w-4 text-indigo-600"
                   />
-                  <span>Other</span>
+                  <span>Bespoke Solutions</span>
                 </label>
               </div>
             </div>
@@ -189,17 +182,11 @@ const handleSubmit = async (e) => {
               />
             </div>
 
-    
-
             {/* Hidden Subject Field */}
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Website Enquiry"
-            />
+            <input type="hidden" name="_subject" value="New Website Enquiry" />
 
-           {/* Hidden Subject Field  for formspree to detect bots*/}
-             <div style={{ display: "none" }}>
+            {/* Hidden Subject Field  for formspree to detect bots*/}
+            <div style={{ display: "none" }}>
               <input
                 type="text"
                 name="_gotcha"
@@ -208,12 +195,11 @@ const handleSubmit = async (e) => {
               />
             </div>
 
-
             {/* Submit Button */}
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-semibold transition duration-300 disabled:opacity-50"
+              className="w-full bg-[#0B1F3A] hover:bg-indigo-700 text-white py-3 rounded-lg font-semibold transition duration-300 disabled:opacity-50"
             >
               {loading ? "Sending..." : "Submit"}
             </button>
@@ -224,9 +210,7 @@ const handleSubmit = async (e) => {
               We aim to get back to you within 24 hours of submitting your
               enquiry.
             </p>
-            <p className="mt-2">
-              Alternatively, give us a call.
-            </p>
+            <p className="mt-2">Alternatively, give us a call.</p>
           </div>
         </div>
       </section>
