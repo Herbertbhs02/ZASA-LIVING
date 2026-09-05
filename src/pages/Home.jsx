@@ -150,10 +150,8 @@ const Home = () => {
                 className="float-left mr-4 mb-2 h-[7rem] w-[12rem] rounded-xl"
               />
               <p className="mt-0">
-                ZASA Living provides professional oversight for your primary
-                residence, investment properties, or the homes of family
-                members. We minimize the stress of property ownership through
-                proactive management.
+               ZASA Living provides professional oversight for your primary residence, investment properties,
+                or the homes of family members.
               </p>
             </div>
 

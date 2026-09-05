@@ -48,6 +48,28 @@ const servicesData = [
     ],
   },
   
+ {
+    title: "Property Care",
+    image: "images/PropertyCare.png",
+    description:
+      "ZASA Living provides professional oversight for your primary residence, investment properties, or the homes of family members. We minimize the stress of property ownership through proactive management. ",
+    items: [
+      {
+        heading: "Project Management:",
+        text: "Expert oversight of home improvements, renovations, and essential repairs to ensure they are completed on time and to standard.",
+      },
+      {
+        heading: "Professional Key Holding:",
+        text: " We provide secure access for contractors and perform regular property checks while you are away, ensuring you never return to unexpected issues.",
+      },
+      {
+        heading: "Landlord Support:",
+        text: "Specialized assistance for property owners, including routine inspections and tenant-related logistics.",
+      },
+    ],
+  },
+
+
   {
     title: "Bespoke Solutions",
     image: "images/Received_a_package.jpg",
